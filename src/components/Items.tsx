@@ -17,6 +17,7 @@ import {
   Button,
   CardMedia
 } from "@material-ui/core";
+import { toast } from "react-toastify";
 
 const useStyles = makeStyles((theme: any) => ({
   card: {
@@ -82,6 +83,7 @@ const Items: React.FC<Partial<ItemTypes>> = props => {
               variant="contained"
               color="secondary"
               className={classes.button}
+              onClick={() => toast(`${name} has been added to orders`)}
             >
               Add Order
             </Button>

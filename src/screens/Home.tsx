@@ -10,7 +10,8 @@ import { Grid, Button } from "@material-ui/core";
 import { Category } from "../enums";
 import { withRouter, RouteComponentProps } from "react-router";
 import CartIcon from "@material-ui/icons/ShoppingCart";
-// import Items from "../components/items";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function TabContainer(props: any) {
   return (
@@ -183,6 +184,7 @@ const Home = (props: RouteComponentProps) => {
           </TabContainer>
         )}
       </div>
+      <ToastContainer />
     </React.Fragment>
   );
 };
