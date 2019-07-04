@@ -25,11 +25,11 @@ function createData(name: string, calories: number) {
 }
 
 const rows = [
-  createData("Frozen yoghurt", 159),
-  createData("Ice cream sandwich", 237),
-  createData("Eclair", 262),
-  createData("Cupcake", 305),
-  createData("Gingerbread", 356)
+  createData("Pork Sisig", 2),
+  createData("Pork Liempo", 1),
+  createData("Beef Tapa", 5),
+  createData("Chicken Inasal", 1),
+  createData("Pork Humba", 3)
 ];
 
 export default function OrderList() {
