@@ -155,11 +155,17 @@ const Home = (props: RouteComponentProps) => {
         </AppBar>
         {value === 0 && (
           <TabContainer>
-            <Grid container spacing={3}>
+            <Grid
+              container
+              spacing={3}
+              justify="center"
+              alignItems="center"
+              direction="row"
+            >
               {items.map((item: any) => {
                 return (
                   item.category === Category.SAVORY && (
-                    <Grid item xs={4}>
+                    <Grid item md={6} sm={12} lg={4}>
                       <Items name={item.name} />
                     </Grid>
                   )
@@ -174,7 +180,7 @@ const Home = (props: RouteComponentProps) => {
               {items.map((item: any) => {
                 return (
                   item.category === Category.HEALTHY && (
-                    <Grid item xs={4}>
+                    <Grid item md={6} sm={12} lg={4}>
                       <Items name={item.name} />
                     </Grid>
                   )
